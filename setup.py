@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 REQUIREMENTS = [
     'docutils',
@@ -10,7 +10,7 @@ REQUIREMENTS = [
 setup(
     name='golismero',
     long_description_content_type="text/markdown",
-    packages=find_packages(),
+    packages=['golismero',],
     py_modules=['golismero'],
     entry_points = {
         'console_scripts': [
